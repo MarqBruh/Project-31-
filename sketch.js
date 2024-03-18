@@ -54,14 +54,14 @@ function draw() {
   textSize(20)
  //text("Score : "+score,20,30);
   Engine.update(engine);
-  ground.display();
+  ground.display(); 
   
    for (var i = 0; i < plinkos.length; i++) {
      
      plinkos[i].display();
      
    }
-   if(frameCount%15==30){
+   if(frameCount%15==0){
      particles.push(new Particle(random(width/2-30, width/2+30), 10,10));
      score++;
    }
