@@ -61,8 +61,8 @@ function draw() {
      plinkos[i].display();
      
    }
-   if(frameCount%15==0){
-     particles.push(new Particle(random(width/2-30, width/2+30), 10,10));
+   if(frameCount%1==0){
+     particles.push(new Particle(random(0-width, width), 5,5));
      score++;
    }
  
